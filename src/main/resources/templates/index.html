@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="'' + ${jsonText}" style="white-space: pre"></p>
+</p>
+</body>
+
+<!--<div id="editArticleForm" style="display: none" class="editArticleForm">-->
+<!--    <form id="edit-article-form" th:action="@{/editArticle}" method="post" th:object="${articleForm}">-->
+<!--        <span onclick="closeDiv()" class="close">x</span>-->
+<!--        <h2>Изменить статью</h2>-->
+<!--        <div>-->
+<!--            &lt;!&ndash; текста, названия, timestamp ставим типа now() &ndash;&gt;-->
+
+<!--            <label>-->
+<!--                <input type="text" name="title" th:field="*{title}" placeholder="Название">-->
+<!--            </label>-->
+<!--            <label>-->
+<!--                <textarea placeholder="Текст" name="body" th:field="*{body}" rows="10" cols="30"></textarea>-->
+<!--            </label>-->
+<!--        </div>-->
+<!--        <button type="submit">Опубликовать</button>-->
+<!--    </form>-->
+<!--</div>-->
+</html>
