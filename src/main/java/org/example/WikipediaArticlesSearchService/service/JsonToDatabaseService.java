@@ -42,7 +42,7 @@ public class JsonToDatabaseService {
     }
 
     private JsonStreamParser getJsonStreamParser() {
-        File file = new File(jsonPath);
+        File file =  new File("."+ File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "static" + File.separator + jsonPath);
         InputStream inputStream = null;
         Reader reader = null;
         try {
